@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERTICA LTD - Software Development & IT Consultancy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Courier New', Monaco, 'Lucida Console', monospace;
+            font-size: 14px;
+            line-height: 1.4;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .terminal {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #000000;
+            border: 2px solid #333333;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+        
+        .prompt {
+            color: #00ff00;
+            margin-bottom: 10px;
+        }
+        
+        .ascii-art {
+            color: #ffffff;
+            margin: 20px 0;
+            white-space: pre;
+            font-size: 12px;
+            line-height: 1;
+        }
+        
+        .section {
+            margin: 20px 0;
+            border-left: 2px solid #333333;
+            padding-left: 15px;
+        }
+        
+        .section-title {
+            color: #00ff00;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .company-details {
+            margin: 10px 0;
+        }
+        
+        .highlight {
+            color: #00ffff;
+        }
+        
+        .link {
+            color: #ffff00;
+            text-decoration: underline;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #666666;
+            border-top: 1px solid #333333;
+            padding-top: 20px;
+        }
+        
+        .cursor {
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="prompt">root@pertica:~$ cat company_info.txt</div>
+        
+        <div class="ascii-art">
+ ██████╗ ███████╗██████╗ ████████╗██╗ ██████╗ █████╗ 
+ ██╔══██╗██╔════╝██╔══██╗╚══██╔══╝██║██╔════╝██╔══██╗
+ ██████╔╝█████╗  ██████╔╝   ██║   ██║██║     ███████║
+ ██╔═══╝ ██╔══╝  ██╔══██╗   ██║   ██║██║     ██╔══██║
+ ██║     ███████╗██║  ██║   ██║   ██║╚██████╗██║  ██║
+ ╚═╝     ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝╚═╝  ╚═╝
+                                                      
+                      L I M I T E D
+        </div>
+        
+        <div class="section">
+            <div class="section-title">COMPANY_REGISTRATION</div>
+            <div class="company-details">
+                <strong>Legal Name:</strong> <span class="highlight">PERTICA LTD</span><br>
+                <strong>UK Company Number:</strong> <span class="highlight">16327040</span><br>
+                <strong>Incorporation Date:</strong> 19 March 2025<br>
+                <strong>Status:</strong> <span class="highlight">ACTIVE</span><br>
+                <strong>Jurisdiction:</strong> United Kingdom
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">REGISTERED_ADDRESS</div>
+            <div class="company-details">
+                27 Old Gloucester Street<br>
+                London, United Kingdom<br>
+                WC1N 3AX
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">BUSINESS_OPERATIONS</div>
+            <div class="company-details">
+                <strong>Primary Activity:</strong> Software Development & AI Research<br>
+                <strong>Specialization:</strong> AI-Powered Helpdesk Solutions<br>
+                <strong>Target Market:</strong> Enterprise Customer Support Automation
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">VERIFICATION_LINKS</div>
+            <div class="company-details">
+                <strong>Companies House:</strong><br>
+                <a href="https://find-and-update.company-information.service.gov.uk/company/16327040" class="link" target="_blank">
+                https://find-and-update.company-information.service.gov.uk/company/16327040
+                </a>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">CONTACT_INFO</div>
+            <div class="company-details">
+                <strong>Business Enquiries:</strong> info@pertica.io<br>
+                <strong>Technical Support:</strong> admin@pertica.io<br>
+                <strong>Just to chit-chat:</strong> chat@pertica.io<br>
+            </div>
+        </div>
+        
+        <div class="prompt" style="margin-top: 30px;">
+            root@pertica:~$ systemctl status pertica-services
+        </div>
+        <div style="color: #00ff00; margin-bottom: 10px;">
+            ● pertica-api.service - loaded and active (running)<br>
+            ● pertica-telegram.service - loaded and active (running)<br>
+            ● pertica-admin.service - loaded and active (running)
+        </div>
+        
+        <div class="prompt">
+            root@pertica:~$ echo "Building the future of customer support, one commit at a time."
+        </div>
+        <div style="color: #00ffff; margin-bottom: 20px;">
+            Building the future of customer support, one commit at a time.
+        </div>
+        
+        <div class="prompt">
+            root@pertica:~$ <span class="cursor">_</span>
+        </div>
+        
+        <div class="footer">
+            <div>© 2025 PERTICA LTD - All rights reserved</div>
+            <div>Registered in the United Kingdom | Company No. 16327040</div>
+        </div>
+    </div>
+</body>
+</html>

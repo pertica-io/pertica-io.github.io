@@ -43,6 +43,16 @@
             line-height: 1;
         }
         
+        .simple-logo {
+            display: none;
+            color: #00ff00;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0;
+            letter-spacing: 2px;
+        }
+        
         .section {
             margin: 20px 0;
             border-left: 2px solid #333333;
@@ -68,6 +78,25 @@
             text-decoration: underline;
         }
         
+        .email-link {
+            color: #00ffff;
+            text-decoration: none;
+            padding: 2px 4px;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+        
+        .email-link:hover {
+            background-color: #00ffff;
+            color: #000000;
+            text-decoration: none;
+        }
+        
+        .status-indicator {
+            color: #00ff00;
+            margin-right: 5px;
+        }
+        
         .footer {
             margin-top: 40px;
             text-align: center;
@@ -84,6 +113,37 @@
             0%, 50% { opacity: 1; }
             51%, 100% { opacity: 0; }
         }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .ascii-art {
+                display: none;
+            }
+            
+            .simple-logo {
+                display: block;
+            }
+            
+            body {
+                font-size: 12px;
+                padding: 10px;
+            }
+            
+            .terminal {
+                padding: 15px;
+                border: 1px solid #333333;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                font-size: 11px;
+            }
+            
+            .simple-logo {
+                font-size: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -99,6 +159,10 @@
  ╚═╝     ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝╚═╝  ╚═╝
                                                       
                       L I M I T E D
+        </div>
+        
+        <div class="simple-logo">
+            P E R T I C A &nbsp;&nbsp; L T D
         </div>
         
         <div class="section">
@@ -143,26 +207,26 @@
         <div class="section">
             <div class="section-title">CONTACT_INFO</div>
             <div class="company-details">
-                <strong>Business Enquiries:</strong> info@pertica.io<br>
-                <strong>Technical Support:</strong> admin@pertica.io<br>
-                <strong>Just to chit-chat:</strong> chat@pertica.io<br>
+                <strong>Business Enquiries:</strong> <a href="mailto:info@pertica.io" class="email-link">info@pertica.io</a><br>
+                <strong>Technical Support:</strong> <a href="mailto:admin@pertica.io" class="email-link">admin@pertica.io</a><br>
+                <strong>Chit-Chat:</strong> <a href="mailto:chat@pertica.io" class="email-link">chat@pertica.io</a><br>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">CURRENT_STATUS</div>
+            <div class="company-details">
+                <span class="status-indicator">●</span> <strong>Development:</strong> <span class="highlight">Active</span> - Shopify WhatsApp Integration<br>
+                <span class="status-indicator">●</span> <strong>Research:</strong> <span class="highlight">Ongoing</span> - Convenient omni-channel experience<br>
+                <span class="status-indicator">●</span> <strong>Operations:</strong> <span class="highlight">Operational</span> - 24/7 Support Services
             </div>
         </div>
         
         <div class="prompt" style="margin-top: 30px;">
-            root@pertica:~$ systemctl status pertica-services
-        </div>
-        <div style="color: #00ff00; margin-bottom: 10px;">
-            ● pertica-api.service - loaded and active (running)<br>
-            ● pertica-telegram.service - loaded and active (running)<br>
-            ● pertica-admin.service - loaded and active (running)
-        </div>
-        
-        <div class="prompt">
-            root@pertica:~$ echo "Building the future of customer support, one commit at a time."
+            root@pertica:~$ cat company_motto.txt
         </div>
         <div style="color: #00ffff; margin-bottom: 20px;">
-            Building the future of customer support, one commit at a time.
+            Every second matters.
         </div>
         
         <div class="prompt">
